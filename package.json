@@ -1,0 +1,27 @@
+{
+  "name": "line-drawer",
+  "version": "1.0.0",
+  "description": "## Условия задачи",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./example/index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didolf/line-drawer.git"
+  },
+  "author": "didolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didolf/line-drawer/issues"
+  },
+  "homepage": "https://github.com/didolf/line-drawer#readme",
+  "dependencies": {
+    "d3": "^6.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "parcel-bundler": "^1.12.4"
+  }
+}
