@@ -1,0 +1,73 @@
+.elem1 {
+    background-color: green;
+    width: 100px;
+    height: 400px;
+}
+
+.elem2 {
+    background-color: yellow;
+    width: 100px;
+    height: 400px;
+}
+
+.elem3 {
+    background-color: grey;
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    top: 300px;
+    left: 100px;
+}
+
+.elem3:hover {
+    background-color: aqua;
+}
+
+.elem1cont {
+    max-height: 800px;
+    overflow: auto;
+    position: fixed;
+    top: 20px;
+    left: 100px;
+}
+
+.elem1contWithoutScroll {
+    height: 12000px;
+}
+
+.elem2contWithoutScroll {
+    height: 18000px;
+}
+
+.elem2cont {
+    max-height: 800px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 400px;
+}
+
+.fill-200 {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
+#d3-drawer-line {
+    animation: loading 1.5s ease-in infinite;
+}
+
+@keyframes loading {
+    from {
+        opacity: 1;
+        stroke: green;
+    }
+    50% {
+        opacity: 0.7;
+        stroke: red;
+    }
+    to {
+        opacity: 1;
+        stroke: green;
+    }
+}
