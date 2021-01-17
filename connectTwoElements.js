@@ -16,12 +16,16 @@ export class ConnectTwoElements {
         this.oldCentersPoints = null;
         this.CORNER_ANGLE = 25;
         this.handleMouseWheel = this.handleMouseWheel.bind(this);
+        this.initChangeObservers();
+    }
+
+    initChangeObservers() {
         window.addEventListener("mousewheel", this.handleMouseWheel);
         this.MO = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
                 if (
-                    mutation.target.contains(firstEl) ||
-                    mutation.target.contains(secondEl)
+                    mutation.target.contains(this.firstEl) ||
+                    mutation.target.contains(this.secondEl)
                 ) {
                     this.redraw();
                 }
@@ -35,8 +39,8 @@ export class ConnectTwoElements {
         });
         this.firstElRO = new ResizeObserver(() => this.redraw());
         this.secondElRO = new ResizeObserver(() => this.redraw());
-        this.firstElRO.observe(firstEl);
-        this.secondElRO.observe(secondEl);
+        this.firstElRO.observe(this.firstEl);
+        this.secondElRO.observe(this.secondEl);
     }
 
     handleMouseWheel(ev) {

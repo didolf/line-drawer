@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+
 export class D3LineDrawer {
     constructor(color = "red", width = 10, id = "d3-drawer-line") {
         this.width = width;
